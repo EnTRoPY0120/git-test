@@ -1,2 +1,1 @@
-# git-test
-Odin test
+# A Game of Rock-Paper-Scissors
