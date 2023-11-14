@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
 </head>
-<body>
 
-    <script rel="javascript" src="./script.js"></script>
-    
-    
+<body>
+    <h1 id="title">Rock Paper Scissors (Pokemon Version)</h1>
+    <div id="container">
+        <!--view contains sprites, textbox, & choices-->
+        <div id="view">
+            <div id="images">
+                <img class="scene" src="Assets/Images/Scene/grass.png" alt="">
+                <div class="player-tag-group">
+                    <span class="player-tag-level">1</span>
+                    <span class="player-tag-name">PLAYER</span>
+                    <div class="player-tag-score-outer">
+                        <div class="player-tag-score"></div>
+                    </div>
+                    <img class="player-tag" src="./Assets/Images/UI/player-healthbar.png" alt="">
+                </div>
+                <img class="choice player-choice" src="./Assets/Images/Choices/paper.png" alt="">
+                <img class="player" src="./Assets/Images/Pokemons/Pikachu.png" alt="">
+                <div class="computer-tag-group">
+                    <span class="computer-tag-level">1</span>
+                    <span class="computer-tag-name">COMPUTER</span>
+                    <div class="computer-tag-score-outer">
+                        <div class="computer-tag-score"></div>
+                    </div>
+                    <img class="computer-tag" src="./Assets/Images/UI/computer-healthbar.png" alt="">
+                </div>
+                <img class="choice computer-choice" src="./Assets/Images/Choices/paper.png" alt="">
+                <img class="computer" src="./Assets/Images/Pokemons/charizard.png" alt="">
+            </div>
+            <div id="action">
+                <div class="textbox"></div>
+                <div class="choices">
+                    <button id="rockBtn">ROCK</button>
+                    <button id="paperBtn">PAPER</button>
+                    <button id="scissorsBtn">SCISSORS</button>
+                    <button id="statusBtn">STATUS</button>
+                </div>
+            </div>
+        </div>
+        <div class="controller">
+            <div class="control-btns">
+                <button id="mute-btn" class="control-btn"><i class="fas fa-volume-mute"></i></button>
+                <button id="power-btn" class="control-btn"><i class="fa fa-power-off"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <!--audio used in game-->
+    <audio id="battle-music" src="./Assets/Audio/battle-with-wild-pokemon.mp3"></audio>
+    <footer>
+        <a href="https://github.com/EnTRoPY0120">@EnTRoPY0120</a><i class="fa-brands fa-github"></i>
+    </footer>
 </body>
+
 </html>
