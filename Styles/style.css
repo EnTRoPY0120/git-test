@@ -7,7 +7,7 @@ body {
     justify-content: center;
     flex-direction: column;
     /* background: #cacaca; */
-    background-image: url('/Assets/Images/Background/backdrop.png');
+    background-image: url('./Assets/Images/Background/backdrop.png');
     background-repeat: no-repeat;
     background-size: cover; 
     background-attachment: fixed;
